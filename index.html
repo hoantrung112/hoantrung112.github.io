@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSRF Token -->
+    <!-- <meta name="csrf-token" content="{{ csrf_token() }}"> -->
+
+    <title>About us</title>
+
+    <!-- Scripts -->
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdn.tiny.cloud/1/5a0m60pcoog7fcisjgw02wuljhwhvzdx8jk8tf8lfdceufez/tinymce/5/tinymce.min.js"
+        referrerpolicy="origin"></script> -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+
+    <!-- {{-- fontawesome --}} -->
+    <script src="https://kit.fontawesome.com/cdd6cc768f.js" crossorigin="anonymous"></script>
+    <!-- Styles -->
+    <!-- {{-- bootstrap v4.6 --}} -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css" />
+
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand py-0 pl-5" href="/">
+                <img alt="GmStock" style="width:50px"
+                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1625020024qO7KVzhyJducfH4.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                style="border:none!important">
+                <span class="navbar-toggler-icon"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blogs">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/genres">Genres</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="/blogs/new">
+                            New Blog
+                        </a>
+                    </li>
+                    <div class="collapse" id="searchBox">
+                        <form class="form-inline py-2 my-lg-0" style="border-radius: 100px">
+                            <input class="form-control mr-sm-2 " type="search" placeholder="Search..."
+                                aria-label="Search">
+                        </form>
+                    </div>
+                    <button class="btn my-2 my-sm-0" type="submit" data-toggle="collapse" href="#searchBox"
+                        role="button" aria-expanded="false" aria-controls="searchBox">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- Authentication Links -->
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            nhtrung
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div id="section-banner">
+                <div class="d-flex justify-content-center pt-0">
+                    <img src="https://i.ibb.co/fFLqJSW/logo.png" alt="GmStock-Logo">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="align-items-center">
+                        <h1 class="display-2">GmStock</h1>
+                        <small class="pl-5"><i>Knowledge gives profits</i></small>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-3 pt-5">
+                    <span>
+                        <i class="fas fa-quote-left"></i> &nbsp;
+                        <b>Relentlessly building a friendly, optimal environment for better learning experiences.</b>
+                        &nbsp;<i class="fas fa-quote-right"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="container">
+
+                <div id="section-intro" class="col-md-12 text-center mt-2 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 my-4">
+                            <h1 class=""><b class="gm-heading">Lớp học kiến thức đầu tư, chứng khoán thông minh</b></h1>
+                            <br>
+                            <p class="text-secondary">GmStock cung cấp các khóa học đầu tư chứng khoán từ cơ bản tới
+                                nâng cao cho
+                                người mới bắt đầu.</p>
+                            <br>
+                            <div>
+                                <a class="gm-btn mt-1" href="#vision-section"><i class="fas fa-binoculars"></i>&nbsp;
+                                    <span>Tìm hiểu</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1624958805F9Ifi1epTUOqgqf.png"
+                                style="width: 100%; margin: 80px 0px;">
+                            <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1624958829rmjFHNGMFCFCi5B.png"
+                                style="position: absolute; width: 90%; margin-left: -380px; z-index: -1; margin-top: 80px;">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 my-4">
+                    <div class="d-flex justify-content-center my-4" id="vision-section">
+                        <h1 class="display-4 gm-heading">Tầm nhìn</h1>
+                    </div>
+                    <br>
+                    <div class="row align-items-center">
+                        <div class="col-md-7 my-4">
+                            <img src="https://vicogroup.vn/images/upload/images/thi_truong_chung_khoan_vnb-1598224491265.jpg"
+                                alt="Stock market" width="100%" class="gm-img">
+                        </div>
+                        <div class="col-md-5 my-4">
+                            <ul style="list-style-type: none;">
+                                <li>
+                                    <p class="text-secondary">
+                                        <span><i class="fas fa-check" style="color: rgb(67, 197, 74)"></i>&nbsp;
+                                            Gmstock dẫn đầu là trung tâm giảng dạy về quản lý tài chính cá nhân, đầu tư
+                                            chứng khoán.
+                                        </span>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="text-secondary">
+                                        <span><i class="fas fa-check" style="color: rgb(67, 197, 74)"></i>&nbsp;
+                                            Gmstock tích hợp công nghệ thực hành hàng đầu tại Việt Nam.
+                                        </span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center my-4">
+                        <a class="gm-btn mt-1" href="#details" data-toggle="collapse" aria-expanded="false"
+                            data-target=".multi-collapse" role="button">
+                            <i class="fas fa-binoculars"></i>&nbsp;
+                            <span>Chi tiết</span>
+                        </a>
+                    </div>
+                    <div class="row align-items-center my-4 collapse multi-collapse" id="details">
+                        <div class="col-md-5 gm-border-gradient my-4">
+                            <p class="text-secondary " style="background: #fff; padding: 2rem;">
+                                <span><i class="fas fa-chart-line gm-color-main"></i>&nbsp;
+                                    Công nghệ phân tích thị trường mới nhất.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-7 my-4">
+                            <img src="https://www.investo.vn/wp-content/uploads/2019/09/top-10-trading-ideas-1.jpg"
+                                alt="GmStock Trading Chart" class="gm-img" width="100%">
+                        </div>
+                    </div>
+                    <div class="row align-items-center my-4 collapse multi-collapse" id="details-2">
+                        <div class="col-md-7 my-4">
+                            <img src="https://hocviendautu.edu.vn/wp-content/uploads/2020/08/cach-choi-chung-khoan-ao.jpg"
+                                alt="GmStock Virtual Market" class="gm-img" width="100%">
+                        </div>
+                        <div class="col-md-5 gm-border-gradient my-4">
+                            <p class="text-secondary " style="background: #fff; padding: 2rem;">
+                                <span><i class="fas fa-desktop gm-color-main"></i>&nbsp;
+                                    Công nghệ hỗ trợ đầu tư ảo.
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center my-4 collapse multi-collapse" id="details-3">
+                        <div class="col-md-5 gm-border-gradient my-4">
+                            <p class="text-secondary " style="background: #fff; padding: 2rem;">
+                                <span><i class="fas fa-users gm-color-main"></i>&nbsp;
+                                    Cộng đồng tài chính, đầu tư - sôi nổi, thân thiện.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-md-7 my-4">
+                            <img src="https://www.nickdewilde.com/content/images/2020/08/Super-Community-by-Hurca--for-Hiwow-on-Dribbble-1.png"
+                                alt="GmStock Virtual Market" class="gm-img" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 my-4">
+                    <div class="d-flex justify-content-center my-4" id="vision-section">
+                        <h1 class="display-4 gm-heading">Sứ mệnh</h1>
+                    </div>
+                    <br>
+                    <div class="gm-border-gradient">
+                        <ul style="list-style-type: none;background: #fff; padding:3rem;">
+                            <li>
+                                <p>
+                                    <i class="fas fa-book gm-color-main"></i> &nbsp;&nbsp;&nbsp;
+                                    GmStock với sứ mệnh mang kiến thức nền, phân tích đầu tư tới cho thế hệ trẻ, những
+                                    người đam
+                                    mê đầu tư.
+                                </p>
+                            </li>
+                            <hr>
+                            <li>
+                                <p>
+                                    <i class="fas fa-search-dollar gm-color-main"></i> &nbsp;&nbsp;&nbsp;
+                                    Tạo cho họ thói quen đầu tư nhằm phát triển bản thân trong tương lai.
+                                </p>
+                            </li>
+                            <hr>
+                            <li>
+                                <p>
+                                    <i class="fas fa-comment-dots gm-color-main"></i> &nbsp;&nbsp;&nbsp;
+                                    Đưa ra những lời khuyên khi bước chân vào thị trường chứng khoán, cung cấp kiến thức
+                                    để
+                                    phòng
+                                    tránh những mô hình đa cấp biến tướng, lừa đảo,…
+                                </p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 my-4">
+                    <div class="d-flex justify-content-center my-4" id="staff-section">
+                        <h1 class="display-4 gm-heading">Đội ngũ</h1>
+                    </div>
+                    <br>
+                    <div class="staff-wrapper">
+                        <div class="grid-wrapper">
+                            <div class="d-flex flex-column grid-item">
+                                <img class="gm-img-ava"
+                                    src="https://scontent.fhan1-1.fna.fbcdn.net/v/t1.6435-9/70180294_1546352108840231_3805262546613567488_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=ad2b24&_nc_ohc=Yw2xA8Uj_8UAX9RSMEX&tn=xlNZ_DlwFx620CIT&_nc_ht=scontent.fhan1-1.fna&oh=2e17553d9206c83bb2aab2507313e193&oe=61255365"
+                                    alt="GM Tran">
+                                <h3 class="staff-name">Gia Minh TRAN</h3>
+                                <small class="text-secondary">Founder & CEO</small>
+                            </div>
+                            <div class="grid-item">
+                                <img class="gm-img-ava"
+                                    src="https://scontent.fhan1-1.fna.fbcdn.net/v/t1.6435-9/151236920_1118159658627294_7117627045121136214_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=9w8mwU0k5TcAX-gfQeD&_nc_ht=scontent.fhan1-1.fna&oh=cab27ca2ccd7fc8dc74d9fc3ab90e387&oe=61264F44"
+                                    alt="Gia Hung">
+                                <h3 class="staff-name">Gia Hung TRAN</h3>
+                                <small class="text-secondary">Co-founder & Head of HR Dept.</small>
+                            </div>
+                            <div class="grid-item">
+                                <img class="gm-img-ava"
+                                    src="https://scontent.fhan1-1.fna.fbcdn.net/v/t1.6435-9/74666217_3003641479859991_990069251119251456_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=rJ5zYTcCf5YAX81fET3&tn=xlNZ_DlwFx620CIT&_nc_ht=scontent.fhan1-1.fna&oh=a46f3c06b16ffeb0e10c5fffa35e09d0&oe=61254C97"
+                                    alt="Truong Giang">
+                                <div class="align-items-center">
+                                    <h3 class="staff-name">Truong Giang NONG</h3>
+                                    <div><small class="text-secondary">Co-founder & Customer Services</small></div>
+                                </div>
+                            </div>
+                            <div class="grid-item">
+                                <img class="gm-img-ava"
+                                    src="https://scontent.fhan1-1.fna.fbcdn.net/v/t1.6435-9/134092821_1823500241150253_7438053107321077649_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=ugfuDVjG_foAX_b5hJM&_nc_ht=scontent.fhan1-1.fna&oh=656697d13ec80af819d32dc6137b8158&oe=6127E8BD"
+                                    alt="Hoang Nam">
+                                <h3 class="staff-name">Trung Hoang Nam NGUYEN</h3>
+                                <div><small class="text-secondary">Co-founder & Marketing</small></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 my-4">
+                    <div class="d-flex justify-content-center my-4" id="achievements-section">
+                        <h1 class="display-4 gm-heading">Cột mốc phát triển</h1>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-12 my-4">
+                    <div class="d-flex justify-content-center my-4" id="partners-section">
+                        <h1 class="display-4 gm-heading">Đối tác</h1>
+                    </div>
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 text-center">
+                            <h3 class="my-4"><b>GmStock được tin tưởng bởi nhiều doanh nghiệp</b></h3>
+                            <div style="padding: 50px">
+                                <a class="gm-btn mt-1" href="https://www.instagram.com/gmstock.vn/" target="_blank"><i
+                                        class="fab fa-instagram"></i>&nbsp;
+                                    Liên hệ ngay
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068432MRKB00XuVssYyW7.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068432FlP2uTL9M2GXVgs.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/16260684328ZClSNSCocBFGHU.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068432XrjSquySfROQzZd.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068433jCbXhlfgtmRcc62.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068433AMYsS8TAUU9HqyM.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068433yK9fRovDjYADTXR.png"
+                                class="w-100 rounded-15">
+                        </div>
+                        <div class="col-3">
+                            <img src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1626068433yEXC2eTNW9nF7wi.png"
+                                class="w-100 rounded-15">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+        </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
