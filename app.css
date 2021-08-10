@@ -80,6 +80,10 @@ ul {
   height: 86.36px;
 }
 
+.course-description {
+  height: 115px;
+}
+
 a,
 a:hover {
   cursor: pointer;
