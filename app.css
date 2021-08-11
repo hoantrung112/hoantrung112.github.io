@@ -89,9 +89,3 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
 }
-
-.carousel-video {
-  width: 540px;
-  height: 360px;
-  border-radius: 30px;
-}
