@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::after,
 ::before {
@@ -88,4 +89,37 @@ a,
 a:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+ul.course-benefit li::before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.course-lesson-bg {
+  cursor: pointer;
+  padding-bottom: 70%;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+}
+
+.course-lesson-img {
+  width: 100%;
+  margin-top: -70%;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.course-lesson-img:hover {
+  transform: scale(1.05);
+}
+
+.price-tag {
+  height: 76px;
 }
