@@ -123,3 +123,13 @@ ul.course-benefit li::before {
 .price-tag {
   height: 76px;
 }
+
+.my-btn {
+  transition: all 0.1s ease;
+}
+
+.my-btn:hover {
+  padding: 9.2px 27.6px;
+  font-size: 115%;
+  opacity: 0.9;
+}
