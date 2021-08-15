@@ -91,8 +91,7 @@ a:hover {
   text-decoration: none;
 }
 
-ul.course-benefit li::before,
-ul.course-description li::before {
+ul.list-style-dot li::before {
   content: "•";
   color: #007bff;
   font-weight: bold;
