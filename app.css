@@ -107,11 +107,14 @@ ul.list-style-dot li::before {
   transition: all 0.3s;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
   background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+  background-size: cover;
+
 }
 
 .course-lesson-img {
   width: 100%;
-  margin-top: -70%;
+  margin-top: -65%;
+  margin-left: 5%;
   transition: all 0.2s ease-in-out;
   position: relative;
 }
