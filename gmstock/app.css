@@ -1,0 +1,139 @@
+@charset "UTF-8";
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#app {
+  font-family: "Quicksand", sans-serif;
+}
+
+.btn-gradient {
+  background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+  border: none;
+  color: white;
+}
+
+.btn-round {
+  border-radius: 30px;
+}
+
+.color-blue {
+  color: #007bff;
+}
+
+.color-blue-light {
+  color: #4CA4FF;
+}
+
+.img-round {
+  border-radius: 25px;
+}
+
+#myFooter {
+  background-color: #232323;
+  color: white;
+  padding-top: 30px;
+}
+
+#myFooter .footer-copyright {
+  background-color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.scroll-effect-1 {
+  transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s !important;
+}
+
+.scroll-effect-2 {
+  transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s !important;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.carousel-img {
+  width: 380px;
+  height: 380px;
+}
+
+.carousel-slider:hover {
+  opacity: 1;
+}
+
+.btn-courses {
+  background-color: #56b82e;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.course-title {
+  height: 86.36px;
+}
+
+.course-description {
+  height: 100px;
+}
+
+a,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul.list-style-dot li::before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.course-lesson-bg {
+  cursor: pointer;
+  padding-bottom: 70%;
+  position: relative;
+  transition: all 0.3s;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+  background-size: cover;
+
+}
+
+.course-lesson-img {
+  width: 100%;
+  margin-top: -65%;
+  margin-left: 5%;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.course-lesson-img:hover {
+  transform: scale(1.05);
+}
+
+.price-tag {
+  height: 76px;
+}
+
+.my-btn {
+  transition: all 0.1s ease;
+}
+
+.my-btn:hover {
+  /* padding: 9.2px 27.6px;
+  font-size: 115%; */
+  opacity: 0.9;
+  transform: scale(1.15);
+}

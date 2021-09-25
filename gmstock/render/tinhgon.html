@@ -1,0 +1,522 @@
+<style>
+    @charset "UTF-8";
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #app {
+        font-family: "Quicksand", sans-serif;
+    }
+
+    .btn-gradient {
+        background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+        border: none;
+        color: white;
+    }
+
+    .btn-round {
+        border-radius: 30px;
+    }
+
+    .color-blue {
+        color: #007bff;
+    }
+
+    .color-blue-light {
+        color: #4CA4FF;
+    }
+
+    .img-round {
+        border-radius: 25px;
+    }
+
+    #myFooter {
+        background-color: #232323;
+        color: white;
+        padding-top: 30px;
+    }
+
+    #myFooter .footer-copyright {
+        background-color: black;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .scroll-effect-1 {
+        transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s !important;
+    }
+
+    .scroll-effect-2 {
+        transition: transform 0.6s cubic-bezier(0, 0, 0, 1) 0s !important;
+    }
+
+    .rounded-20 {
+        border-radius: 20px;
+    }
+
+    .carousel-img {
+        width: 380px;
+        height: 380px;
+    }
+
+    .carousel-slider:hover {
+        opacity: 1;
+    }
+
+    .btn-courses {
+        background-color: #56b82e;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .course-title {
+        height: 86.36px;
+    }
+
+    .course-description {
+        height: 100px;
+    }
+
+    a,
+    a:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    ul.list-style-dot li::before {
+        content: "•";
+        color: #007bff;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    .course-lesson-bg {
+        cursor: pointer;
+        padding-bottom: 70%;
+        position: relative;
+        transition: all 0.3s;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.05);
+        background: linear-gradient(269.38deg, #5c30f5 0.13%, #42c1f7 99.46%);
+        background-size: cover;
+    }
+
+    .course-lesson-img {
+        width: 100%;
+        margin-top: -65%;
+        margin-left: 5%;
+        transition: all 0.2s ease-in-out;
+        position: relative;
+    }
+
+    .course-lesson-img:hover {
+        transform: scale(1.05);
+    }
+
+    .price-tag {
+        height: 76px;
+    }
+
+    .my-btn {
+        transition: all 0.1s ease;
+    }
+
+    .my-btn:hover {
+        /* padding: 9.2px 27.6px;
+        font-size: 115%; */
+        opacity: 0.9;
+        transform: scale(1.15);
+    }
+</style>
+<div class="container my-4">
+    <div id="course-overview" class="my-4">
+        <div class="row justify-content-md-center">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-center">
+                    <img alt="GmStock" style="height:50px;width:50px;"
+                        src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1625020024qO7KVzhyJducfH4.png">
+                </div>
+                <div class="text-center py-4">
+                    <h6 class="color-blue"><b>LỚP HỌC</b></h6>
+                    <h1 class="py-3"><b>CHỨNG KHOÁN TINH GỌN</b></h1>
+                    <p class="text-secondary">Nếu bạn là người mới tìm hiểu về Chứng khoán và đang muốn
+                        trang bị đầy đủ
+                        kiến
+                        thức để
+                        sẵn sàng bước chân vào thị trường, đây chính là khóa học dành cho bạn.
+                    </p>
+                    <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                        Đăng ký ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img class="scroll-effect-1 w-100"
+                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629606762cebzf7lpozm4Mvd.png"
+                    style="margin-top: 100px">
+                <img class="scroll-effect-2"
+                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629123748djUg0z4rL4BBNWO.png"
+                    style="position: absolute; width:70%; margin-left: -350px; z-index: -1; margin-top: 80px;">
+            </div>
+            <div class="col-md-5 offset-md-1 pb-4">
+                <div class="pb-4">
+                    <h5 class="color-blue"><b>MÔ TẢ KHÓA HỌC</b></h5>
+                    <h2 class="pb-4">CHỨNG KHOÁN TINH GỌN</h2>
+                    <div class="pb-4">
+                        <ul class="list-style-dot">
+                            <li>Với lộ trình hơn 12 buổi trong vòng 1 tháng, khóa học tinh
+                                gọn của GmStock sẽ đem đến cho bạn cái nhìn toàn cảnh về thị trường chứng
+                                khoán Việt
+                                Nam.
+                            </li>
+                            <li>Khóa học tinh gọn cung cấp cho bạn những kiến thức cần thiết về phân tích cơ
+                                bản và
+                                phân tích kỹ thuật.
+                            </li>
+                            <li>
+                                Khóa học tinh gọn giúp bạn nắm được những quy tắc cần có khi giao dịch chứng
+                                khoán.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="course-rewards" class="row mt-4 align-items-center">
+        <div class="col-md-6 py-4">
+            <h5 class="color-blue pt-4"><b>LỢI ÍCH KHÓA HỌC</b></h5>
+            <h2 class="pb-4">CHỨNG KHOÁN TINH GỌN</h2>
+            <ul class="list-style-dot pt-4">
+                <li>Nắm chắc kiến thức chứng khoán cơ bản và nâng cao.</li>
+                <li>Nhận diện cổ phiếu tốt và cổ phiếu xấu.</li>
+                <li>Cùng chia sẻ mạng lưới với các bạn có cùng chí hướng.</li>
+                <li>Sẵn sàng đầu tư chứng khoán</li>
+            </ul>
+            <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                Đăng ký ngay
+            </a>
+        </div>
+        <div class="col-md-6 pt-4">
+            <img class="scroll-effect-1 w-100"
+                src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629123842pNskXI3aibpteYX.png"
+                style="margin:100px 0px 0px 0px;">
+            <img class="scroll-effect-2 w-100"
+                src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629123864RD4LvDZJ4mLURoy.png"
+                style="position: absolute; width: 90%; margin-left: -400px; z-index: -1; margin-top: 250px;">
+        </div>
+    </div>
+    <div id="course-content" class="mb-4">
+        <div class="row justify-content-md-center">
+            <div class="col-md-12 pb-4">
+                <div class="text-center">
+                    <h5 class="color-blue"><b>GIÁO TRÌNH KHÓA HỌC</b></h5>
+                    <h2 class="pb-3">CHỨNG KHOÁN TINH GỌN</h2>
+                    <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                        Đăng ký ngay
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621155TDhcwaA1CmpWRWe.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607256iOZmkTs8acy5llb.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 1</b></h5>
+                        <p class="course-description">
+                            Chứng khoán - Kênh đầu tư xu thế? Khái niệm chứng khoán, sàn giao dịch, công ty
+                            chứng khoán.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621000vH64uBmwo3KKCqd.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607290mlAYG8f2F31ceVG.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 2</b></h5>
+                        <p class="course-description">
+                            Bảng điện, giờ giao dịch, cách đặt lệnh mua và bán, luật T+2.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621762J1ouTKmEmaWVdsR.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/16296073041wM8bD5KGFLOWLk.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 3</b></h5>
+                        <p class="course-description">
+                            Phương pháp phân tích cơ bản. Các chỉ số tài chính, đọc báo cáo tài chính doanh
+                            nghiệp
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621795UO2Dw5I1gptPkgp.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/16296073199tVlW7LgqjpjI0J.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 4</b></h5>
+                        <p class="course-description">
+                            Làm quen biểu đồ kỹ thuật, nến và khối lượng. Chu kỳ của thị trường chứng khoán.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621829a1PAzOkaTp0t6t4.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607333bbQKXySXIR8D0fY.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 5</b></h5>
+                        <p class="course-description">
+                            Phân tích kỹ thuật: Bigboy, phương pháp đi ngang tích lũy đẩy giá.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621887IM4B4i4WFvaV97C.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607350HAAUEJAyYuQInBB.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 6</b></h5>
+                        <p class="course-description">
+                            Tiêu chí khi mua và bán cổ phiếu.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621905uEFkUhTZyI1NhKO.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607362jdE4GfOFNjcAkqp.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 7</b></h5>
+                        <p class="course-description">
+                            Phân tích kỹ thuật: Kháng cự, hỗ trợ.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621922TIaKNLcssRyGMHz.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607376TqGvDBpazjoFKXm.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 8</b></h5>
+                        <p class="course-description">
+                            Phân tích kỹ thuật: Các mẫu hình cơ bản trong đầu tư chứng khoán.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621946oCtiqnwSCfffqoa.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607387R5n6P9F61yIlcRE.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 9</b></h5>
+                        <p class="course-description">
+                            Phân tích kỹ thuật: Các chỉ báo kỹ thuật hiệu quả trong đầu tư chứng khoán.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621967rNvzUgFIAbEdlGg.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607398bCFJ5VMhZRjwrBF.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 10</b></h5>
+                        <p class="course-description">
+                            Margin là gì? Hướng dẫn sử dụng Margin. Cổ phiếu bo cung.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629622212nluVHBNdkffCKLE.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607408JR4EBHadmzZBtXr.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 11</b></h5>
+                        <p class="course-description">
+                            Quản trị danh mục, hướng dẫn đi vốn giải ngân.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a style="color:black">
+                    <div class="course-lesson-bg rounded-20" style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629622229lUFXcDAvuvHv7sY.png');">
+                    </div>
+                    <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629607419gzSKcqkwlQZZGil.png"
+                        class="course-lesson-img">
+                    <div class="course-infor">
+                        <h5 class="course-name"><b>Buổi 12</b></h5>
+                        <p class="course-description">
+                            Kinh nghiệm cá nhân trên thị trường.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="course-tuition" class="my-4">
+        <div class="text-center">
+            <h2 class="color-blue pt-4"><b>HỌC PHÍ KHÓA HỌC</b></h2>
+            <p class="pb-4 text-secondary">Chọn hình thức học phù hợp với bạn</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 text-center">
+            <div class="col">
+                <div class="card mb-4 shadow-sm pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal"> Giá gốc</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="price-tag">
+                            <h1 class="card-title">3.000.000đ</h1>
+                        </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="mb-1 mt-4">
+                                Nền tảng học độc quyền tại GmStock
+                            </li>
+                            <li class="mb-1">
+                                12 buổi học Online
+                            </li>
+                        </ul>
+                        <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                            Đăng ký ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 shadow-sm pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal"> Học viên cũ</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="price-tag">
+                            <h1 class="card-title">2.400.000đ</h1>
+                            <small>(Chiết khấu 20% cho học viên cũ)</small>
+                        </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="mb-1 mt-4">
+                                Nền tảng học độc quyền tại GmStock
+                            </li>
+                            <li class="mb-1">
+                                12 buổi học Online
+                            </li>
+                        </ul>
+                        <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                            Đăng ký ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 shadow-sm pricing-card">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal"> Đặt cọc / Trả góp</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="price-tag">
+                            <h1 class="card-title">Liên hệ</h1>
+                        </div>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="mb-1 mt-4">
+                                Nền tảng học độc quyền tại GmStock
+                            </li>
+                            <li class="mb-1">
+                                12 buổi học Online
+                            </li>
+                        </ul>
+                        <a class="btn btn-round btn-gradient px-4 py-2 my-4 text-white my-btn" href="#pick-class">
+                            Đăng ký ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function trans(element, rate) {
+        var parent = element;
+        while (!parent.classList.contains('container')) {
+            parent = parent.parentElement;
+        }
+        var difference = window.pageYOffset - parent.offsetTop;
+        if (difference > -500) {
+            var velocity = difference * rate;
+            element.style.transform = 'translate3d(0px, ' + velocity + 'px,0px)';
+        }
+
+    };
+    window.addEventListener('scroll', function (e) {
+        var scrolled = window.pageYOffset;
+        try {
+            var elements = document.querySelectorAll('.scroll-effect-1');
+            for (var i = 0; i < elements.length; i++) {
+                trans(elements[i], -0.1);
+            }
+
+        } catch (error) {
+
+        }
+        try {
+            var elements = document.querySelectorAll('.scroll-effect-2');
+            for (var i = 0; i < elements.length; i++) {
+                trans(elements[i], -0.2);
+            }
+
+        } catch (error) {
+
+        }
+    });
+</script>

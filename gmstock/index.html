@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HomePage</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:100,300,400,400i,600,800,500,700" rel="stylesheet">
+
+    <!-- {{-- fontawesome --}} -->
+    <script src="https://kit.fontawesome.com/cdd6cc768f.js" crossorigin="anonymous"></script>
+
+    <!-- {{-- bootstrap v4.6 --}} -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./app.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="row navbar navbar-expand-lg navbar-light" style="z-index:100">
+                            <a class="navbar-brand" href="/">
+                                <img alt="GmStock" class="rounded" style="height:50px;width:50px"
+                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1625020024qO7KVzhyJducfH4.png">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link text-black dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Khóa học
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item nav-link text-black"
+                                                href="/course/chung-khoan-tinh-gon">
+                                                <img class="rounded-circle"
+                                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627325005EVeJ2zEAzd0NQKi.jpg"
+                                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                                Chứng khoán tinh gọn
+                                            </a>
+                                            <a class="dropdown-item nav-link text-black"
+                                                href="/course/nang-cao-phan-tich-co-ban">
+                                                <img class="rounded-circle"
+                                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627324536hlAMM5nMykDKH4Z.jpg"
+                                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                                Nâng cao - Phân tích cơ bản
+                                            </a>
+                                            <a class="dropdown-item nav-link text-black"
+                                                href="/course/nang-cao-phan-tich-ky-thuat">
+                                                <img class="rounded-circle"
+                                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627324718tTkh5LZMXCWjzHy.jpg"
+                                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                                Nâng cao - Phân tích kỹ thuật
+                                            </a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link text-black dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Kiến thức
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item nav-link text-black" href="/rank">
+                                                <i class="fas fa-portrait mr-2"></i>Học viên
+                                            </a>
+                                            <a class="dropdown-item nav-link text-black" href="/blog">
+                                                <i class="fas fa-bookmark mr-2"></i>Blog
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link text-black dropdown-toggle" data-toggle="dropdown"
+                                            role="button" aria-haspopup="true" aria-expanded="false">
+                                            Tính năng
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item nav-link text-black" href="#">
+                                                <i class="fas fa-vr-cardboard mr-2"></i>Đầu tư ảo
+                                            </a>
+                                            <a class="dropdown-item nav-link text-black" href="/tradingview">
+                                                <i class="fas fa-chart-line mr-2"></i>Phân tích
+                                            </a>
+                                            <a class="dropdown-item nav-link text-black" href="#">
+                                                <i class="fas fa-heart mr-2"></i>Trải nghiệm thực tế
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="https://e.gmstock.vn">E-GmStock</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-black" href="/about-us">Về GmStock</a>
+                                    </li>
+                                </ul>
+
+                                <ul id="vue-nav" class="nav navbar-nav navbar-right d-flex" style="display: block;">
+                                    <li><button data-toggle="modal" data-target="#modalLogin"
+                                            class="btn my-2 my-sm-0 btn-gradient"><i
+                                                class="fas fa-arrow-circle-right"></i>&nbsp;&nbsp;Đăng nhập
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="container my-4">
+                <div id="section-intro">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 my-4">
+                            <h5 class="color-blue pb-4"><b>GmStock</b></h5>
+                            <h1><b>Lớp học kiến thức đầu tư, chứng khoán thông minh</b></h1>
+                            <p class="text-secondary my-4 pt-4">
+                                GmStock cung cấp các khóa học đầu tư chứng khoán từ cơ bản tới nâng cao
+                                cho người mới bắt đầu.
+                            </p>
+                            <div class="my-4">
+                                <a class="btn my-btn btn-round btn-gradient px-4 py-2 my-4 text-white" href="#section-courses">
+                                    Tìm hiểu thêm
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- <img class="scroll-effect-1 w-100"
+                                src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629644376G6RSIFtawhCtykK.png"
+                                style="margin: 100px 0px"> -->
+                            <img class="scroll-effect-1 w-100"
+                                src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1632544197m7rWN52ZpmU0SLH.png"
+                                style="margin: 100px 0px">
+                            <img class="scroll-effect-2" src="https://i.ibb.co/gJF8ff3/bg-450.png"
+                                style="position: absolute; width:90%; margin-left: -380px; z-index: -1; margin-top: 70px;">
+                            <img class="scroll-effect-2 w-50"
+                                src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1632544330Y9UwIPzbba16I6H.png"
+                                style="margin: 500px 0px 80px; position: absolute; z-index: 100; right: 0%;">
+                        </div>
+                    </div>
+                </div>
+                <div id="section-overview" class="my-4">
+                    <div class="col-md-12 text-center my-4 pt-4">
+                        <h5 class="color-blue py-2"><b>GmStock</b></h5>
+                        <h1><b class="pb-4">Học đi đôi với hành</b></h1>
+                        <p class="text-secondary py-4">
+                            GmStock tin rằng việc áp dụng kiến thức vào thực tế là vô cùng quan trọng.
+                            <br> Tham gia để trải nghiệm ngay công nghệ thực hành của GmStock.
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                        <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1632544623BeTcW4yWyvyl5y2.png"
+                            class="scroll-effect-2 w-25"
+                            style="margin: -100px 0px 100px; position: absolute; z-index: 100; left: -5%;">
+                    </div>
+
+                    <div id="overviewCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#overviewCarousel" data-slide-to="0" class="active"
+                                style="background-color:#007bff; border-radius:50%; height:10px; width:10px;"></li>
+                            <li data-target="#overviewCarousel" data-slide-to="1" class=""
+                                style="background-color:#007bff;border-radius:50%; height:10px; width:10px;"></li>
+                            <li data-target="#overviewCarousel" data-slide-to="2" class=""
+                                style="background-color:#007bff;border-radius:50%; height:10px; width:10px;"></li>
+                        </ol>
+                        <div class="carousel-inner p-4 my-4 rounded-20 shadow">
+                            <div class="carousel-item active">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5 py-4">
+                                        <img class="carousel-img"
+                                            src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629644416jjMOAlNgSmvq41K.png">
+                                    </div>
+                                    <div class="col-md-6 text-left p-4">
+                                        <h1 class="pt-4"><b>Đầu tư ảo</b></h1>
+                                        <p class="color-blue pb-4"><b>GmStock</b></p>
+                                        <p>Công cụ đầu tư Demo ảo không cần vốn giúp học sinh áp dụng trực tiếp kiến
+                                            thực đã học vào
+                                            thực hành và tiếp cận sớm với thị trường chứng khoán.</p>
+                                        <a class="btn my-btn btn-round btn-gradient px-4 py-2 my-4 text-white">
+                                            Trải nghiệm ngay
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5 py-4">
+                                        <img class="carousel-img"
+                                            src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629644468geGwkF3lIOoajOV.png">
+                                    </div>
+                                    <div class="col-md-6 text-left py-4">
+                                        <h1 class="pt-4"><b>Tích hợp phân tích</b></h1>
+                                        <p class="color-blue pb-4"><b>GmStock</b></p>
+                                        <p>Phân tích cổ phiếu được tích hợp một cách toàn diện ngay trên nền tảng học
+                                            của GmStock.
+                                        </p>
+                                        <a class="btn my-btn btn-round btn-gradient px-4 py-2 my-4 text-white">
+                                            Trải nghiệm ngay
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-5 py-4">
+                                        <img class="carousel-img"
+                                            src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629644505ZQtOvNhoZqRTWRz.png">
+                                    </div>
+                                    <div class="col-md-6 text-left p-4">
+                                        <h1 class="pt-4"><b>Gặp gỡ chuyên gia</b></h1>
+                                        <p class="color-blue pb-4"><b>GmStock</b></p>
+                                        <p>Học sinh được gặp gỡ và lắng nghe những chia sẻ từ những chuyên gia hàng đầu
+                                            trong lĩnh
+                                            vực.</p>
+                                        <a class="btn my-btn btn-round btn-gradient px-4 py-2 my-4 text-white">
+                                            Chi tiết
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev carousel-slider" href="#overviewCarousel" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                style="background-image:url('http://d1j8r0kxyu9tj8.cloudfront.net/files/16260089729kNW2kQKkXvH9eA.png');width:50px;height:50px"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next carousel-slider" href="#overviewCarousel" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                style="background-image:url('https://d1j8r0kxyu9tj8.cloudfront.net/files/1626008686uT8EFyat8kdyKBH.png');width:50px;height:50px;"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div id="section-courses" class="my-4 py-4">
+                    <div class="py-4">
+                        <h1 class="py-4"><b>Danh sách khóa học</b></h1>
+                        <p>GmStock cung cấp khoá học đầu tư, chứng khoán, quản lý tài chính từ cơ bản tới nâng cao.</p>
+                    </div>
+                    <div class="my-4">
+                        <span class="btn-round my-btn px-4 py-3 my-4 text-white" style="background:black">
+                            Khóa học cơ bản
+                        </span>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-4 my-4 py-4">
+                            <a target="_blank" href="https://gmstock.vn/course/chung-khoan-tinh-gon"
+                                style="color: black;">
+                                <div class="course-lesson-bg rounded-20"
+                                    style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621946oCtiqnwSCfffqoa.png');">
+                                </div>
+                                <img class="py-4 w-100 course-lesson-img"
+                                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/16296448171u4cA6GQlTZH7DV.png"
+                                    alt="CK Tinh Gọn">
+                                <h4><b>Chứng khoán tinh gọn</b></h4>
+                                <p class="text-secondary">12 buổi</p>
+                                <p class="pt-3 course-description">Khóa học cung cấp kiến thức đầu tư chứng khoán toàn
+                                    diện cho nhà
+                                    đầu tư mới.</p>
+                                <span class="btn-courses">
+                                    3,000,000đ
+                                </span>
+                            </a>
+                        </div>
+                        <!-- <div class="col-md-4 offset-md-1 my-4 py-4">
+                            <a href="#" style="color: black;">
+                                <div class="course-lesson-bg rounded-20"
+                                    style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629621967rNvzUgFIAbEdlGg.png');">
+                                </div>
+                                <img class="py-4 w-100 course-lesson-img" src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629645948y77groSI23Nz63U.png" alt="Phái sinh không khó">
+                                <h4><b>Đầu tư phái sinh không khó</b></h4>
+                                <p class="text-secondary">11 buổi</p>
+                                <p class="pt-3 course-description">Khóa học cung cấp trọn vẹn kiến thức và bộ công cụ
+                                    giúp nhà đầu
+                                    tư tự tin trong thị
+                                    trường phái sinh.</p>
+                                <span class="btn-courses">
+                                    3.000.000đ
+                                </span>
+                            </a>
+                        </div> -->
+                    </div>
+                    <br>
+                    <div class="my-4">
+                        <span class="btn-round px-4 py-3 my-4 text-white" style="background:black;">
+                            Khóa học nâng cao
+                        </span>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-md-4 my-4 py-4">
+                            <a target="_blank" href="https://gmstock.vn/course/nang-cao-phan-tich-co-ban"
+                                style="color: black;">
+                                <div class="course-lesson-bg rounded-20"
+                                    style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629622212nluVHBNdkffCKLE.png');">
+                                </div>
+                                <img class="py-4 w-100 course-lesson-img"
+                                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629645432Zz6mmZEscaB9jSz.png"
+                                    alt="PTCB">
+                                <h4><b>Chứng khoán nâng cao - Phân tích cơ bản</b></h4>
+                                <p class="text-secondary">10 buổi</p>
+                                <p class="pt-3 course-description">Nắm chắc phương pháp phân tích cơ bản, đọc báo tài
+                                    chính và nội
+                                    tại của một doanh
+                                    nghiệp.</p>
+                                <span class="btn-courses">
+                                    6,500,000đ
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-md-4 offset-md-1 my-4 py-4">
+                            <a target="_blank" href="https://gmstock.vn/course/nang-cao-phan-tich-ky-thuat"
+                                style="color: black;">
+                                <div class="course-lesson-bg rounded-20"
+                                    style="background-image: url('http://d1j8r0kxyu9tj8.cloudfront.net/files/1629622229lUFXcDAvuvHv7sY.png');">
+                                </div>
+                                <img class="py-4 w-100 course-lesson-img"
+                                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1629645523wraIMBuQIP1SB6l.png"
+                                    alt="PTKT">
+                                <h4><b>Chứng khoán nâng cao - Phân tích kỹ thuật</b></h4>
+                                <p class="text-secondary">10 buổi</p>
+                                <p class="pt-3 course-description">Nắm chắc phương pháp phân tích kỹ thuật, các công cụ
+                                    hữu dụng
+                                    trong quá trình phân
+                                    tích.</p>
+                                <span class="btn-courses">
+                                    6,500,000đ
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="section-feedback" class="my-4 py-4">
+                    <div class="row align-items-center py-4">
+                        <div class="col-md-6 my-4">
+                            <h1><b class="">Đánh giá về GmStock</b></h1>
+                            <h6 class="color-blue pb-4"><b>Nguồn động lực để GmStock tiếp tục phát triển</b></h6>
+                            <a class="btn my-btn btn-round btn-gradient px-4 py-2 my-4 text-white">
+                                Đăng ký ngay
+                            </a>
+                        </div>
+                        <div class="col-md-6 py-4">
+                            <div id="feedbackCarousel" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#feedbackCarousel" data-slide-to="0" class="active"
+                                        style="background-color:#626262; border-radius:50%; height:10px; width:10px;">
+                                    </li>
+                                    <li data-target="#feedbackCarousel" data-slide-to="0" class=""
+                                        style="background-color:#626262; border-radius:50%; height:10px; width:10px;">
+                                    </li>
+                                    <li data-target="#feedbackCarousel" data-slide-to="0" class=""
+                                        style="background-color:#626262; border-radius:50%; height:10px; width:10px;">
+                                    </li>
+                                    <li data-target="#feedbackCarousel" data-slide-to="1" class=""
+                                        style="background-color:#626262;border-radius:50%; height:10px; width:10px;">
+                                    </li>
+                                    <li data-target="#feedbackCarousel" data-slide-to="2" class=""
+                                        style="background-color:#626262;border-radius:50%; height:10px; width:10px;">
+                                    </li>
+                                </ol>
+                                <div class="carousel-inner rounded-20 my-4 shadow">
+                                    <div class="carousel-item active p-4">
+                                        <div class="row justify-content-center">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/70Rf_81A1jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <div class=" text-center" style="opacity:.8">
+                                                <h3 class="pt-2"><b>Trần Gia Hưng</b></h3>
+                                                <p class="pb-2">K01 - Lớp CK NC, phân tích cơ bản</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item p-4">
+                                        <div class="row justify-content-center">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/Ct6BUPvE2sM" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <div class="text-center " style="opacity:.8">
+                                                <h3 class="pt-2"><b>Trần Gia Gia</b></h3>
+                                                <p class="pb-2">K02 - Lớp Chứng khoán tinh gọn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item p-4">
+                                        <div class="row justify-content-center">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/Jk38OqdAQxc" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <div class="text-center " style="opacity:.8;">
+                                                <h3 class="pt-2"><b>Nông Trường Giang</b></h3>
+                                                <p class="pb-2">K11 - Lớp Chứng khoán tinh gọn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item p-4">
+                                        <div class="row justify-content-center">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/7n_5pbvD2GM" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <div class="text-center" style="opacity:.8;">
+                                                <h3 class="pt-2"><b>Phạm Giang Huy</b></h3>
+                                                <p class="pb-2">K27 - Lớp CK NC, phân tích kỹ thuật</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item p-4">
+                                        <div class="row justify-content-center">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/PCXYaPwuofI" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <div class="text-center" style="opacity:.8;">
+                                                <h3 class="pt-2"><b>Nguyễn T. Hoàng Nam</b></h3>
+                                                <p class="pb-2">K23 - Lớp Chứng khoán phái sinh</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev carousel-slider" href="#feedbackCarousel" role="button"
+                                    data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"
+                                        style="background-image:url('http://d1j8r0kxyu9tj8.cloudfront.net/files/16260089729kNW2kQKkXvH9eA.png');width:50px;height:50px"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next carousel-slider" href="#feedbackCarousel" role="button"
+                                    data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"
+                                        style="background-image:url('https://d1j8r0kxyu9tj8.cloudfront.net/files/1626008686uT8EFyat8kdyKBH.png');width:50px;height:50px"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                            <img src="https://i.ibb.co/gJF8ff3/bg-450.png"
+                                style="position: absolute; width:120%; margin-left: -75px; z-index: -1; margin-top: -550px;">
+                        </div>
+                    </div>
+                </div>
+                <div id="section-partnership" class="my-4 py-4">
+                    <div class="text-center my-4 pt-4">
+                        <h1><b class="">Đối tác của GmStock</b></h1>
+                        <h6 class="color-blue pb-4"><b>Partnership</b></h6>
+                    </div>
+                    <div class="col-md-12">
+                        <img src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1632544623BeTcW4yWyvyl5y2.png"
+                            class="scroll-effect-2 w-25"
+                            style="margin: 500px 0px 100px; position: absolute; z-index: 100; left: -5%;">
+                        <img class="scroll-effect-2 w-25"
+                            src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1632544330Y9UwIPzbba16I6H.png"
+                            style="margin: 500px 0px 80px; position: absolute; z-index: 100; right: -5%;">
+                    </div>
+                    <div class="d-flex justify-content-around my-4 py-4">
+                        <a href="http://eduto.net/" target="_blank"><img src="https://i.ibb.co/NTHyw75/eduto.png"
+                                class="mt-4" alt="Eduto"></a>
+                        <!-- <a href="https://www.dnse.com.vn/" target="_blank"><img src="https://i.ibb.co/bBWh039/DNSE.png"
+                                class="mt-3 pr-3" alt="DNSE"></a> -->
+                        <a href="https://colorme.vn/" target="_blank"><img src="https://i.ibb.co/LNbWMPT/ColorMe.png"
+                                alt="ColorMe"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-xs-12 col-sm-3 mt-5">
+                        <img alt="GmStock" class="rounded" style="height:50px;width:50px"
+                            src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1625020024qO7KVzhyJducfH4.png">
+                        <br><br><br>
+
+                    </div>
+                    <div class="col-xs-12  col-sm-3 mt-5">
+                        <h5>VỀ GMSTOCK</h5>
+                        <br>
+                        <div class="d-flex flex-column">
+                            <a href="/blog/gioi-thieu-84437">Giới thiệu</a>
+                            <a href="/blog/lien-he-84438">Liên hệ</a>
+                            <a href="/blog/chinh-sach-bao-mat-84439">Chính sách bảo mật</a>
+                            <a href="/blog/dieu-khoan-dich-vu-26092">Điều khoản dịch vụ</a>
+                            <a href="/blog/quy-che-hoat-dong-84440">Quy chế hoạt động</a>
+                            <a href="/blog">Blog</a>
+                            <a href="https://trading.entrade.com.vn/dang-nhap">Đầu tư ảo</a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12  col-sm-3 mt-5">
+                        <h5>KHÓA HỌC</h5>
+                        <br>
+                        <div class="d-flex flex-column">
+                            <a href="/course/chung-khoan-tinh-gon">
+                                <img class="rounded-circle"
+                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627325005EVeJ2zEAzd0NQKi.jpg"
+                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                Chứng khoán tinh gọn
+                            </a>
+                            <a href="/course/nang-cao-phan-tich-co-ban">
+                                <img class="rounded-circle"
+                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627324536hlAMM5nMykDKH4Z.jpg"
+                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                Nâng cao - Phân tích cơ bản
+                            </a>
+                            <a href="/course/nang-cao-phan-tich-ky-thuat">
+                                <img class="rounded-circle"
+                                    src="https://d1j8r0kxyu9tj8.cloudfront.net/files/1627324718tTkh5LZMXCWjzHy.jpg"
+                                    style="border-radius:100px; width: 20px; height: 20px; margin-right: 5px;">
+                                Nâng cao - Phân tích kỹ thuật
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-5">
+                        <h5>TÌM CHÚNG TÔI</h5>
+                        <br>
+                        <div class="d-flex flex-column">
+                            <a href="tel:+842435500333">Hotline</a>
+                            <a href="/su-kien">Sự kiện</a>
+                            <a href="/centers">Các cơ sở</a>
+                            <a href="/khuyen-mai">Khuyến mãi</a>
+                            <a href="/tuyen-dung">Tuyển dụng</a>
+                            <a href="/tin-tuc">Tin tức</a>
+                            <a href="/jobs?utm_source=footer">Việc làm</a>
+                            <a href="/tai-nguyen">Tài nguyên</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 mb-5">
+                            <a href="http://online.gov.vn/Home/WebDetails/40823">
+                                <img style="width: 60%;"
+                                    src="http://d1j8r0kxyu9tj8.cloudfront.net/files/1614431358q3wcdJOkDYlpk14.png">
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-9">
+                            <h5>CÔNG TY CỔ PHẦN </h5>
+                            <br>
+                            <p> COMPANY LIMITED</p>
+                            <p>Mã số thuế: </p>
+                            <p> Địa chỉ:
+                            </p>
+                            <p>Đại diện pháp luật: </p>
+                            <p>Ngày cấp giấy phép: </p>
+                            <p>Điện thoại: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    <script>
+        function trans(element, rate) {
+            var parent = element;
+            while (!parent.classList.contains('container')) {
+                parent = parent.parentElement;
+            }
+            var difference = window.pageYOffset - parent.offsetTop;
+            if (difference > -500) {
+                var velocity = difference * rate;
+                element.style.transform = 'translate3d(0px, ' + velocity + 'px,0px)';
+            }
+
+        };
+        window.addEventListener('scroll', function (e) {
+            var scrolled = window.pageYOffset;
+            try {
+                var elements = document.querySelectorAll('.scroll-effect-1');
+                for (var i = 0; i < elements.length; i++) {
+                    trans(elements[i], -0.1);
+                }
+
+            } catch (error) {
+
+            }
+            try {
+                var elements = document.querySelectorAll('.scroll-effect-2');
+                for (var i = 0; i < elements.length; i++) {
+                    trans(elements[i], -0.2);
+                }
+
+            } catch (error) {
+
+            }
+            try {
+                var elements = document.querySelectorAll('.scroll-effect-3');
+                for (var i = 0; i < elements.length; i++) {
+                    trans(elements[i], -0.5);
+                }
+
+            } catch (error) {
+
+            }
+        });
+    </script>
+</body>
+
+</html>
