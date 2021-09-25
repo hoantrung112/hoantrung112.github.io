@@ -1,1 +1,1 @@
-# GmStock About Page
+# GmStock Demo Screens

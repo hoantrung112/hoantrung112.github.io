@@ -132,7 +132,8 @@ ul.list-style-dot li::before {
 }
 
 .my-btn:hover {
-  padding: 9.2px 27.6px;
-  font-size: 115%;
+  /* padding: 9.2px 27.6px;
+  font-size: 115%; */
   opacity: 0.9;
+  transform: scale(1.15);
 }
